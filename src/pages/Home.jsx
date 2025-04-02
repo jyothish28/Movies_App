@@ -15,6 +15,7 @@ function Home(){
             try{
                 const popularMovies = await getPopularMovies();
                 setMovies(popularMovies)
+
             } catch (err){
                 console.log(err)
                 setError("Failed to load movies...")
@@ -44,7 +45,6 @@ const handleSearch = async (e) => {
     }
     
 }
-
     return( 
     <div className="home">
         <form onSubmit={handleSearch} className="search-form">
@@ -61,12 +61,14 @@ const handleSearch = async (e) => {
 
         {loading ? (
             <div className=""loading>Loading...</div>
-          ) : (<div className="movies-grid">
+          ) : movies.length > 0 ? (<div className="movies-grid">
             {movies.map((movie) =>(
                 <MovieCard movie={movie} key={movie.id} />
           ))}
-        </div>)
-        }
+        </div>
+      ) : (
+        !error && <div className="no-movies">No movies to display...</div>
+        )}
         
     </div>
     );

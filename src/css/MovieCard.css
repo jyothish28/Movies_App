@@ -49,6 +49,22 @@
   opacity: 1;
 }
 
+.rating{
+  position: absolute;
+  top: 1rem;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  width: 75px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
 .favorite-btn {
   position: absolute;
   top: 1rem;

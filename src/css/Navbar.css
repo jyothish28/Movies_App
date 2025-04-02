@@ -1,6 +1,6 @@
 .navbar {
   background-color: #000000;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +10,10 @@
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+#joe{
+  color: #e63946;
 }
 
 .navbar-links {

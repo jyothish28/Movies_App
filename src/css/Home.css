@@ -41,7 +41,12 @@
 .search-button:hover {
   background-color: #f40612;
 }
-
+.no-movies{
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
 
 @media (max-width: 639px) {
   .home {
@@ -61,3 +66,4 @@
   width: 100%;
   box-sizing: border-box;
 }
+
